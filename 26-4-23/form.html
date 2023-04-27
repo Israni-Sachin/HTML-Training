@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        .resi{
+            resize: none;
+           
+        }
+    </style>
 </head>
 
 <body>
     <form action="" method="get">
         <label for="fname" type="text">First Name:
         </label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="fname" name="fname" value="Sachin"><br><br>
 
         <label for="lname" type="text">Last Name:
         </label>
@@ -27,12 +33,12 @@
         <label for="Other">Other</label>
         <br><br>
 
-        <label for="Address">Address:</label><br><textarea name="" id="Address" cols="30" rows="5"
+        <label for="Address">Address:</label><br><textarea class="resi" name="" id="Address" cols="30" rows="5"
             placeholder="Write you full address"></textarea> <br><br>
 
         City: <select name="City" id="City">
-            <option value="Lucknow">Lucknow</option>
-            <option value="Mumbai">Mumbai</option>
+            <option value="Lucknow" >Lucknow</option>
+            <option value="Mumbai" selected>Mumbai</option>
             <option value="Gujarat">Gujarat</option>
             <option value="Del">Delhi</option>
             <option value="Madhya Pradesh">Madhya Pradesh</option>
@@ -42,12 +48,15 @@
         <input type="checkbox" name="Hobbies" id="Playing">
         <label for="Playing">Playing</label>
         <input type="checkbox" name="Hobbies" id="Reading">
-        <label for="Reading">Reading</label>
+        <label for="Playing">Reading</label>
         <input type="checkbox" name="Hobbies" id="Running">
         <label for="Running">Running</label>
         <input type="checkbox" name="Hobbies" id="Learning">
         <label for="Learning">Learning</label> <br><br>
-        
+
+        <input type="password" name="pass" id="pass">
+        <label for="pass"></label>
+        <input type="reset">
         <button>Submit</button>
     </form>
 
