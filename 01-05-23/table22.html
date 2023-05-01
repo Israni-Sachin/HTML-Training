@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            height: 300px;
+            width: 100%;
+            border: solid black;
+        }
+        .hide{
+            border-right-style: hidden;
+            border-bottom-style: hidden;   
+        }
+        .h1{
+            border-bottom-style: hidden;
+        }
+        .h2{
+            border-right-style: hidden;
+            border-bottom-style: hidden;
+        }
+        .h3{
+            border-bottom-style: hidden;
+        }
+        .h4{
+            border-right-style: hidden;
+        }
+        .hide
+        .h2
+        .h4{
+            text-align: right;
+        }
+        .h1
+        .h3
+        .h5{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table border="2px solid black">
+        <tr>
+            <td rowspan="5"></td>
+            <td colspan="2" rowspan="2"></td>
+            <td colspan="3" rowspan="2"></td>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td class="hide"></td>
+            <td class="h1"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="h2"></td>
+            <td class="h3"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="h4"></td>
+            <td class="h5"></td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>
