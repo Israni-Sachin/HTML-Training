@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pseudo selector</title>
+    <style>
+        * {
+            text-align: center;
+            background-color: lightgreen;
+        }
+
+        input:focus {
+            background-color: rgb(0, 226, 34);
+            border: 5px solid lightgray;
+            color: aqua;
+        }
+
+        input[type='checkbox']:checked + label{
+            /* box-shadow: 0 0 0 3px red; */
+            color: red;
+        }
+        input:disabled{
+            border-radius: 15px ;
+            border-color: aqua;
+        }
+        input:enabled{
+            border-radius: 15px ;
+            border-color: red;
+        }
+        .main{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="content">
+
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your first name"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your last name"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" disabled placeholder="No need to enter anything"><br><br>
+
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="Male" name="Gender">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender">
+        <label for="Female">Female</label><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" min="18" max="25" placeholder="Click Up and Down to Enter age" class="main"><br><br>
+
+        <label for="hobby">Favourite Games:</label><br><br>
+        <input type="checkbox" id="ff" name="hobby">
+        <label for="ff">Free Fire</label>
+        <input type="checkbox" id="bgmi" name="hobby">
+        <label for="bgmi">BGMI</label><br><br>
+        <input type="checkbox" id="fb" name="hobby">
+        <label for="fb">Football</label>
+        <input type="checkbox" id="cri" name="hobby">
+        <label for="cri">Cricket</label>
+
+    </div>
+</body>
+
+</html>

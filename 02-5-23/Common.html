@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .batch1 {
+            border: 2px solid goldenrod;
+        }
+
+        .batch2 {
+            border: 2px solid goldenrod;
+        }
+
+
+        /* -----------first child paragrah----------- */
+        /* div.office p:first-child{
+            color: red;
+        } */
+
+        /* -----------last child paragrah----------- */
+        /* .office p:last-child{
+            color: aquamarine;
+            background-color: purple;
+        } */
+
+        /* -----------First of type----------- */
+        /* .office p:first-of-type{
+            background-color: lightgreen;
+        } */
+
+        /*-----------Last of type----------- */
+        /* .office p:last-of-type{
+            border: 3px solid yellow;
+        } */
+
+        /* -----------nth-child-----------*/
+        /* .office p:nth-child(2){
+            font-size: 45px;
+        } */
+
+        /* -----------nth child even(2n)-odd(2n+1)----------- */
+        /* .office p:nth-child(odd){
+            color: red;
+        } */
+
+        /* -----------nth last child----------- */
+        /* .office p:nth-last-child(2){
+            background-color:darkgrey;
+        } */
+
+        /* ------------nth of type---------- */
+        /* .office p:nth-of-type(1){
+            color: darkgoldenrod;
+        } */
+
+        /* --------nth last of type----------- */
+        /* .office p:nth-last-of-type(1){
+            color: goldenrod;
+        } */
+
+        /* --------------only of type----------*/
+        /* .office :only-of-type{
+            color: goldenrod;
+        } */
+
+        /* --------only child----------- */
+        /* .office :only-child {
+            color: goldenrod;
+        } */
+
+         /* -----------empty------ */
+        /* div.office :empty{
+            color: white;
+            background-color: red;
+            height: 50px;
+            width: 80px;
+         } */
+
+         /* ---------not()--------- */
+         /* div.batch1 :not(p){
+            color: green;
+         } */
+    </style>
+</head>
+
+<body>
+    <!-- Parent -->
+
+    <div class="office">
+
+        <!-- First child of office-->
+
+        <div class="batch1">
+
+            <!-- first child of batch1 -->
+            <h3>This is heading</h3>
+            <p>This is a paragraph</p>
+            <p>This is an another paragraph</p>
+            <p></p>
+
+        </div>
+
+        <!-- second and third child of office -->
+
+        <p>This is office class paragraph</p>
+        <p>This is another office class paragraph</p>
+
+        <!-- fourth child of office  -->
+
+        <div class="batch2">
+
+            <!-- first child of batch2 -->
+            <p>This is batch2 paragraph</p>
+            <p>This is another batch2 paragraph</p>
+            <p>This is again batch2 paragraph</p>
+
+        </div>
+        <div class="last">
+            <p>This is only paragraph</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
